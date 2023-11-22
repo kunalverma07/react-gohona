@@ -1,0 +1,101 @@
+.sidenav {
+    &__Container {
+        &--1 {
+            @apply h-screen min-h-screen transition-transform transform;
+        }
+
+        &--2 {
+            @apply translate-x-0 duration-500;
+        }
+
+        &--3 {
+            @apply -translate-x-64 duration-300 w-[7px];
+        }
+    }
+
+    &__Block {
+        @apply relative max-w-[240px] w-60 pb-8 bg-gray-100 flex-1 pr-3 flex flex-col;
+    }
+
+    &__Menu {
+        &--Block {
+            @apply bg-gradient-to-t from-[#f1f1f1] to-[#fcfcfc] rounded-r-2xl mt-3 pr-2 shadow-lg;
+        }
+
+        &--Grids {
+            @apply grid grid-cols-2 mt-4 px-4 text-white relative bottom-6;
+        }
+
+        &--Btns {
+            &-1 {
+                @apply py-[8px] bg-gray-700 text-xs mb-1;
+            }
+            &-2 {
+                @apply py-[8px] bg-gray-400 text-xs mb-1;
+            }
+        }
+
+        &--Text {
+            @apply text-lg pr-1;
+        }
+    }
+
+    &__Logo {
+        &--Container {
+            @apply flex;
+        }
+
+        &--Block {
+            @apply h-14 w-14 relative bottom-1 right-0 bg-white rounded-full;
+        }
+
+        &--Img {
+            @apply h-12 w-12 relative left-1 top-1 cursor-pointer;
+        }
+
+        &--Text {
+            &-Primary {
+                @apply px-3 text-lg py-1 text-black relative right-2;
+            }
+        }
+    }
+
+    &__Col {
+        @apply flex flex-col;
+
+        &--Menu {
+            @apply text-sm ml-9 mt-1;
+        }
+
+        &--List {
+            @apply cursor-pointer rounded-md hover:bg-[#a6f0fc] py-0.5 px-2;
+        }
+    }
+
+    &__List {
+        &--Container {
+            @apply mt-1.5 flex pl-4 py-[5px] rounded-r-md cursor-pointer text-lg;
+        }
+
+        &--Block {
+            @apply top-1 relative;
+
+            &-Icon {
+                @apply text-[20px] mr-1;
+            }
+        }
+    }
+
+    &__Mobile {
+        &--Container {
+            @apply h-screen w-[0px] relative right-2;
+        }
+
+        &--Block {
+            @apply py-4 bg-white border-[1px] border-gray-300 h-14 w-14 rounded-full absolute left-2 top-2;
+            &-Img {
+                @apply h-12 w-12 relative left-[3.5px]  bottom-[13px] cursor-pointer drop-shadow-2xl;
+            }
+        }
+    }
+}

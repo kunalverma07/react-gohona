@@ -1,0 +1,86 @@
+{
+    "topCategories": [
+        {
+            "id": 1,
+            "title": "Sambar Powder",
+            "price": 75,
+            "quantity": 0,
+            "totalAmout": 0,
+            "type": "Gram"
+
+        },
+        {
+            "id": 2,
+            "title": "Rasam Powder",
+            "price": 75,
+            "quantity": 0,
+            "totalAmout": 0,
+            "type": "Gram"
+        },
+        {
+            "id": 3,
+            "title": "Peanut Powder",
+            "price": 75,
+            "quantity": 0,
+            "totalAmout": 0,
+            "type": "Gram"
+        },
+        {
+            "id": 4,
+            "title": "Putnal Powder",
+            "price": 75,
+            "quantity": 0,
+            "totalAmout": 0,
+            "type": "Gram"
+        },
+        {
+            "id": 5,
+            "title": "Gun Powder",
+            "price": 75,
+            "quantity": 0,
+            "totalAmout": 0,
+            "type": "Gram"
+        },
+        {
+            "id": 6,
+            "title": "Spice Paradise",
+            "price": 100,
+            "quantity": 0,
+            "totalAmout": 0,
+            "type": "Gram"
+        },
+        {
+            "id": 7,
+            "title": "Mango Pickle",
+            "price": 600,
+            "quantity": 0,
+            "totalAmout": 0,
+            "type": "KG"
+        },
+        {
+            "id": 8,
+            "title": "Mango Jaggery",
+            "price": 600,
+            "quantity": 0,
+            "totalAmout": 0,
+            "type": "KG"
+        },
+        {
+            "id": 9,
+            "title": "Chegodi",
+            "price": 450,
+            "quantity": 0,
+            "totalAmout": 0,
+            "type": "KG"
+        },
+        {
+            "id": 10,
+            "title": "Muruku",
+            "price": 450,
+            "quantity": 0,
+            "totalAmout": 0,
+            "type": "KG"
+        }
+
+    ]
+}

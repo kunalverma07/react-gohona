@@ -1,0 +1,37 @@
+.prodcard {
+    &__Container {
+        @apply container ml-auto mr-auto my-5 flex flex-wrap items-start;
+    }
+
+    &__Block {
+        @apply w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2;
+    }
+
+    &__Data {
+        &--BG {
+            @apply bg-white cursor-pointer rounded-lg p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300;
+        }
+
+        &--IBG {
+            @apply mb-2;
+        }
+
+        &--Icon {
+            @apply w-20 h-20 ml-auto mr-auto text-gray-600;
+        }
+    }
+
+    &__Title {
+        &--Block {
+            @apply rounded-lg p-4 bg-gray-600 flex flex-col;
+        }
+
+        &--Primary {
+            @apply text-white text-2xl font-bold leading-none;
+        }
+
+        &--Secondary {
+            @apply text-xs text-gray-400 leading-none;
+        }
+    }
+}

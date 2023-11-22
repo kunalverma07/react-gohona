@@ -1,0 +1,15 @@
+.admin {
+    &__Container {
+        @apply w-screen h-screen bg-gray-100 flex flex-grow overflow-hidden;
+    }
+
+    &__Content {
+      @apply bg-gray-100 flex-1;
+    }
+
+    &__Block {
+      &--Inner {
+        @apply mx-auto flex items-center justify-center mt-5;
+      }
+    }
+}

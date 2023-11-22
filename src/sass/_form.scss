@@ -1,0 +1,83 @@
+.form {
+
+    &__Block {
+        @apply mx-auto mt-2 my-8 flex items-center justify-center;
+    }
+
+    &__Container {
+        @apply mx-auto;
+
+        &--Grid {
+            @apply mx-auto mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6;
+        }
+
+        &--Col {
+            &-Span {
+                @apply sm:col-span-2;
+            }
+        }
+
+        &--M {
+            &-2 {
+                @apply mt-2;
+            }
+        }
+
+    }
+
+    &__Select {
+        &--Label {
+            @apply block mb-2 text-sm font-medium text-gray-900 dark:text-white;
+        }
+
+        &--Drop {
+            @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+        }
+    }
+
+    &__Input {
+
+        &--Label {
+            @apply block mb-2 text-sm font-medium text-gray-900 dark:text-white;
+        }
+
+        &[type="file"] {
+            @apply w-full block text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400;
+        }
+
+        &[type="text"], &[type="number"], &[type="tel"] {
+            @apply block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6;
+        }
+
+        &--Area {
+            @apply block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6;
+        }
+
+        &--Error {
+            @apply text-lg font-medium text-red-600 dark:text-white;
+        }
+
+        &--Textarea {
+            &[type="textarea"] {
+                @apply w-full resize-none h-[116px] text-gray-800 border-none focus:ring-0 rounded-md;
+            }
+        }
+
+        &--Info {
+            @apply mt-1 text-sm text-gray-500 dark:text-gray-300;
+        }
+    }
+
+    &__Btn {
+        &--Container {
+            @apply mt-8 flex items-center justify-start gap-x-6;
+        }
+
+        &--Submit {
+            &[type="submit"] {
+                @apply rounded-md bg-gray-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600;
+            }
+        }
+    }
+
+}

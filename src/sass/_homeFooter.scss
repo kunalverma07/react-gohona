@@ -1,0 +1,13 @@
+.footer {
+    &__Container {
+        @apply bg-[#f5f6f7] bottom-0 container m-auto;
+    }
+
+    &__Screen {
+        @apply mx-auto w-full max-w-screen-xl;
+    }
+
+    &__Grids {
+        @apply grid sm:grid-cols-2 gap-8 px-4 py-6 lg:py-8 grid-cols-1 xl:grid-cols-3;
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "cartProducts": [
+        {
+            "id": 1,
+            "title": "Green Chilli Pickle",
+            "price": 8.75,
+            "quantity": 0,
+            "totalAmout": 0
+
+        },
+        {
+            "id": 2,
+            "title": "Lemon Pickle",
+            "price": 8.75,
+            "quantity": 0,
+            "totalAmout": 0
+        },
+        {
+            "id": 3,
+            "title": "Amla Pickle",
+            "price": 8.75,
+            "quantity": 0,
+            "totalAmout": 0
+        },
+        {
+            "id": 4,
+            "title": "Tomato Pickle",
+            "price": 8.75,
+            "quantity": 0,
+            "totalAmout": 0
+        },
+        {
+            "id": 5,
+            "title": "Mango Pickle",
+            "price": 8.75,
+            "quantity": 0,
+            "totalAmout": 0
+        },
+        {
+            "id": 6,
+            "title": "Carrot Pickle",
+            "price": 8.75,
+            "quantity": 0,
+            "totalAmout": 0
+        }
+
+    ]
+}

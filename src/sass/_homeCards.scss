@@ -1,0 +1,43 @@
+.card {
+    &__Container {
+       @apply md:w-52 w-72 hover:border-[1.5px] mb-7 hover:border-[#11b76b] rounded-md md:h-[326px] h-[405px] bg-white cursor-pointer;
+    }
+
+    &__Block {
+        @apply flex flex-col w-10/12 h-[8%] m-auto mt-4;
+    }
+
+    &__Img {
+        &--Block {
+            @apply flex-1;
+        }
+
+        &--Content {
+            @apply w-full h-full;
+        }
+    }
+
+    &__Content {
+        &--Block {
+            @apply flex flex-col justify-center m-auto text-center;
+        }
+
+        &--Title {
+            @apply font-medium mt-2.5 md:text-lg text-xl;
+        }
+
+        &--SubTitle {
+            @apply text-green-500 my-2 text-xl md:text-lg;
+        }
+
+        &--Btn {
+            &[type="button"] {
+                @apply md:px-14 px-20 text-xl md:text-[15px] p-2 md:py-1.5 hover:text-white transition ease-in-out hover:bg-green-500 rounded-md bg-gray-200;
+            }
+        }
+
+        &--Btn_Icon {
+            @apply inline mx-1 relative bottom-0.5;
+        }
+    }
+}

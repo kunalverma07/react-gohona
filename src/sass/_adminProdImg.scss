@@ -1,0 +1,111 @@
+.product {
+    &__Img {
+        &--Grid {
+            &-1 {
+                @apply grid gap-4;
+            }
+            &-2 {
+                @apply grid grid-cols-5 gap-4;
+            }
+        }
+
+        &--Selected {
+            @apply h-auto max-w-full rounded-lg;
+        }
+    }
+}
+
+.prodImg {
+    &__MultiContainer {
+        @apply mx-auto px-8 py-4;
+    }
+
+    &__Grids {
+        @apply mx-auto mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6;
+    }
+
+    &__Block {
+
+        &--Center {
+            @apply text-center;
+        }
+
+        &--Icon {
+            @apply mx-auto h-12 w-12 text-gray-300;
+        }
+
+        &--1 {
+            @apply sm:col-span-6;
+        }
+
+        &--2 {
+            @apply mb-6;
+        }
+
+        &--3 {
+            @apply col-span-6;
+        }
+
+        &--4 {
+            @apply sm:col-span-3;
+        }
+
+        &--5 {
+            @apply mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10;
+        }
+
+        &--6 {
+            @apply mt-4 flex text-sm leading-6 text-gray-600;
+        }
+    }
+
+    &__Label {
+        &--1 {
+            @apply block mb-2 text-sm font-medium text-gray-900 dark:text-white;
+        }
+
+        &--2 {
+            @apply block text-sm font-medium leading-6 text-gray-900;
+        }
+
+        &--3 {
+            @apply relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500;
+        }
+    }
+
+    &__Input {
+        &--Label {
+            &[type="text"] {
+                @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-64 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+            }
+        }
+
+        &--File {
+            &[type="file"] {
+                @apply sr-only;
+            }
+        }
+    }
+
+    &__Info {
+        &--1 {
+            @apply pl-1;
+        }
+
+        &--2 {
+            @apply text-xs leading-5 text-gray-600;
+        }
+    }
+
+    &__Btn {
+        &--Container {
+            @apply mt-7 flex items-center justify-start;
+        }
+
+        &--Submit {
+            &[type="submit"] {
+                @apply text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+            }
+        }
+    }
+}

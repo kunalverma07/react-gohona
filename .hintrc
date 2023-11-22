@@ -1,0 +1,36 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+<<<<<<< HEAD
+          "@layer"
+        ]
+      }
+    ]
+  }
+=======
+          "@layer",
+          "-webkit-overflow-scrolling"
+        ]
+      }
+    ]
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not edge <= 117",
+    "not ios_saf <= 17",
+    "not safari <= 16.6",
+    "not and_chr <= 117",
+    "not chrome <= 117",
+    "not firefox <= 117",
+    "not samsung <= 22",
+    "not and_ff <= 117"
+  ]
+>>>>>>> parent of d8061b3 (Hints Updated)
+}

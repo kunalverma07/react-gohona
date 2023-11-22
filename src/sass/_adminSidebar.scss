@@ -1,0 +1,79 @@
+.sidebar {
+    &__Container {
+        &--Main {
+            @apply z-50 h-[2000px] min-h-screen transition-transform transform;
+        }
+
+        &--1 {
+            @apply translate-x-0 duration-300;
+        }
+
+        &--2 {
+            @apply -translate-x-64 duration-300 w-[7px];
+        }
+    }
+
+    &__Block {
+        @apply z-50 relative max-w-[240px] w-60 pb-8 bg-gray-100 pr-3 flex flex-col;
+    }
+
+    &__Menu {
+        &--Container {
+            @apply bg-gradient-to-t from-[#f1f1f1] to-[#fcfcfc] rounded-r-2xl mt-3 pr-2 shadow-lg;
+        }
+
+        &--Box {
+            @apply flex;
+        }
+
+        &--ImgBlock {
+            @apply h-14 w-14 relative bottom-1 right-0 bg-white rounded-full;
+        }
+
+        &--Img {
+            @apply h-12 w-12 relative left-1 top-1 cursor-pointer;
+        }
+
+        &--Title {
+            @apply px-3 text-lg py-1 text-black relative right-2;
+        }
+
+        &--Optn {
+            @apply flex flex-col min-h-screen;
+        }
+
+        &--List {
+            @apply mt-1.5 flex pl-4 py-[5px] rounded-r-md cursor-pointer text-lg;
+
+            &-IBlock {
+                @apply top-1 relative;
+            }
+
+            &-Icon {
+                @apply text-[20px] mr-1;
+            }
+
+            &-Title {
+                @apply text-sm ml-9 mt-1;
+            }
+
+            &-Optns {
+                @apply cursor-pointer rounded-md hover:bg-[#a6f0fc] py-0.5 px-2;
+            }
+        }
+    }
+
+    &__MobileMenu {
+        &--Container {
+            @apply h-screen w-[0px] z-50  relative right-2;
+        }
+
+        &--Block {
+            @apply py-4 bg-white border-[1px] border-gray-300 h-14 w-14 rounded-full absolute left-2 top-2;
+        }
+
+        &--Logo {
+            @apply h-12 w-12 relative left-[3.5px] bottom-[13px] cursor-pointer drop-shadow-2xl;
+        }
+    }
+}

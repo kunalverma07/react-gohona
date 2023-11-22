@@ -1,0 +1,76 @@
+.home {
+  &__Container {
+    &--1 {
+      @apply bg-[#f5f6f7];
+    }
+
+    &--2 {
+      @apply bg-[#f5f6f7]  container m-auto mt-[129px];
+    }
+  }
+
+  &__Collection {
+    @apply flex justify-center align-middle flex-col;
+
+    &--Heading {
+      &-Primary {
+        @apply flex my-4 m-auto text-4xl font-medium;
+      }
+    }
+
+    &--Btns {
+      &-Block {
+        @apply flex justify-center;
+      }
+
+      &-More {
+        @apply bg-white rounded-md border-[1.7px] font-medium p-4 px-6 text-lg text-[#119644] hover:text-white hover:bg-[#119644] border-[#119644];
+      }
+
+      &-Icon {
+        @apply inline text-2xl;
+      }
+    }
+  }
+
+  &__Grids {
+    @apply grid mx-auto gap-4 justify-evenly xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2;
+  }
+
+  &__Img {
+    &--Block {
+      @apply flex md:flex-row flex-col w-11/12 m-auto my-20 gap-8 justify-between;
+    }
+
+    &--Img {
+      @apply rounded-lg h-80 w-full object-cover cursor-pointer transition ease-in-out  hover:-translate-y-1 hover:scale-110 duration-300;
+    }
+  }
+
+  &__Cate {
+    &--Text {
+      &-Primary {
+        @apply flex my-4 m-auto text-center text-4xl font-medium;
+      }
+    }
+
+    &--Block {
+      @apply flex w-[86.5%] sm:flex-row flex-col align-middle gap-4 mx-auto justify-center p-5 rounded-md bg-white my-6  font-medium;
+    }
+
+    &--Optn {
+      @apply cursor-pointer mx-auto md:mx-2 hover:text-[#119644];
+
+      &-Icon {
+        @apply inline mx-2 mb-1;
+      }
+    }
+    &--Cat {
+      @apply cursor-pointer mx-auto md:mx-2 focus:ring-0 border-0 hover:text-[#119644];
+
+      &-Icon {
+        @apply inline mx-2 mb-1;
+      }
+    }
+  }
+}

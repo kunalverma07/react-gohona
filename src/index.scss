@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: "Jost", sans-serif;
+    }
+}
+
+@layer components {
+    .sidebarBtn1 {
+        align-items: center;
+        background-color: initial;
+        background-image: linear-gradient(
+            rgb(167, 167, 167),
+            rgb(57, 58, 58) 95%
+        );
+        border-radius: 0px;
+        border-width: 0;
+        cursor: pointer;
+        display: flex;
+        font-size: 14px;
+        font-weight: 500;
+        justify-content: center;
+        letter-spacing: 0.04em;
+        line-height: 16px;
+        margin: 0;
+        padding: 18px 18px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .sidebarBtn2 {
+        align-items: center;
+        background-color: initial;
+        background-image: linear-gradient(
+            rgb(221, 221, 221),
+            rgb(104, 104, 104)
+        );
+        border-radius: 0px;
+        border-width: 0;
+        cursor: pointer;
+        display: flex;
+        font-size: 14px;
+        font-weight: 500;
+        justify-content: center;
+        letter-spacing: 0.04em;
+        line-height: 16px;
+        margin: 0;
+        padding: 18px 18px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .sidenav__BG {
+        background-color: initial;
+        background-image: linear-gradient(
+            rgb(255, 255, 255),
+            rgb(241, 241, 241)
+        );
+        border-top-right-radius: 5px;
+    }
+}
+
+@import "sass/main.scss";

@@ -1,0 +1,34 @@
+.login {
+    &__Container {
+        @apply h-screen flex flex-col md:flex-row justify-center space-y-10 md:space-y-0 md:space-x-16 items-center my-2 mx-5 md:mx-0 md:my-0;
+    }
+
+    &__Block {
+        @apply md:w-1/3 max-w-sm;
+    }
+
+    &__Form {
+        &--Input {
+            &[type="text"],
+            &[type="password"] {
+                @apply text-lg w-full px-4 py-2 border border-solid border-gray-300 rounded mt-4;
+            }
+
+            &-Error {
+                @apply text-red-600 text-lg w-full px-4 rounded mt-2;
+            }
+        }
+    }
+
+    &__Btn {
+        &--Container {
+            @apply text-center md:text-left;
+        }
+
+        &--Submit {
+            &[type="submit"] {
+                @apply mt-4 bg-teal-600 hover:bg-teal-700 px-4 py-2 text-white uppercase rounded text-lg tracking-wider;
+            }
+        }
+    }
+}

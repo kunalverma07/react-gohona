@@ -1,0 +1,99 @@
+.cart {
+    &__Container {
+        &--1 {
+            @apply z-50 w-full h-full;
+        }
+
+        &--2 {
+            @apply fixed inset-y-0 right-0 w-[359px] bg-white transform;
+        }
+
+        &--3 {
+            @apply transition-transform z-20 border ease-in-out duration-300 overflow-y-auto;
+        }
+
+        &--Open-1 {
+            @apply translate-x-0;
+        }
+
+        &--Open-2 {
+            @apply translate-x-full;
+        }
+    }
+
+    &__Open {
+        &--Block {
+            @apply flex text-[#199a4a] font-semibold text-lg border-b-[1px] border-gray-400 justify-center py-3;
+        }
+
+        &--Btn {
+            &-1 {
+                @apply text-gray-600 z-[100] border hover:bg-green-400 hover:text-white p-2 w-8 rounded-full relative left-3;
+            }
+
+            &-2 {
+                @apply translate-x-[-110px];
+            }
+
+            &-3 {
+                @apply translate-x-80;
+            }
+
+            &-Icon {
+                @apply font-semibold relative right-0.5;
+            }
+        }
+
+        &--Icon {
+            @apply z-0 inline mx-1 relative top-1;
+        }
+    }
+
+    &__Content {
+        &--Block {
+            @apply bg-white h-4/6 flex flex-col overflow-y-scroll;
+        }
+
+        &--Grids {
+            @apply grid grid-cols-8 p-4 gap-3;
+        }
+
+        &--Img {
+            @apply w-20 rounded-md col-span-2;
+        }
+
+        &--Heading {
+            &-Block {
+                @apply flex flex-col gap-0.5 col-span-4;
+            }
+
+            &-Icon {
+                @apply flex align-middle;
+            }
+
+            &-Minus {
+                @apply mt-1.5 rounded-md m-2 cursor-pointer;
+            }
+
+            &-Plus {
+                @apply mt-1.5 rounded-md m-2 cursor-pointer;
+            }
+
+            &-Input {
+                &[type="text"] {
+                    @apply w-[52px] h-8 border-0 focus:ring-0 bg-gray-100 rounded-md;
+                }
+            }
+        }
+    }
+
+    &__Btn {
+        &--Block {
+            @apply flex text-white justify-center border-t-[1px] border-gray-400;
+        }
+
+        &--Order {
+            @apply bg-green-500 hover:bg-gray-600 px-8 py-3 w-11/12  my-4 rounded-lg;
+        }
+    }
+}
